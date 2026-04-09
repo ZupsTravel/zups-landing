@@ -384,11 +384,13 @@
     }
     .strip-img {
       flex: 1;
+      min-width: 0;
       object-fit: cover;
+      object-position: center;
       filter: saturate(1.1);
-      transition: flex 0.5s cubic-bezier(0.4,0,0.2,1);
+      transition: flex 0.4s cubic-bezier(0.4,0,0.2,1);
     }
-    .strip-img:hover { flex: 2.5; }
+    .strip-img:hover { flex: 1.5; }
 
     /* ── SECTION: MANIFESTO ── */
     .manifesto {
@@ -504,7 +506,7 @@
       .waitlist-form input[type="email"],
       .waitlist-form button { width: 100%; }
       .photo-strip { height: 240px; }
-      .strip-img:hover { flex: 1; }
+      .strip-img:hover { flex: 1.2; }
       .stamp-wrap { display: none; }
       footer { flex-direction: column; text-align: center; }
     }
