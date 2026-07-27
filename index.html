@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Zups — The mission isn't engagement. It's movement.</title>
-  <meta name="description" content="Zups is the social travel app built for study abroad students in Europe. Post postcards, coordinate trips with friends, and discover where to go — without the feed, the followers, or the performance." />
-  <meta property="og:title" content="Zups — The mission isn't engagement. It's movement." />
-  <meta property="og:description" content="The social travel app for study abroad students in Europe. Launching 2026." />
+  <title>Zups — When on Earth!</title>
+  <meta name="description" content="Zups is the smart travel app for study abroad students in Europe. Post postcards, coordinate trips with friends, and discover where to go — without the feed, the followers, or the performance." />
+  <meta property="og:title" content="Zups — When on Earth!" />
+  <meta property="og:description" content="The smart travel app for study abroad students in Europe. Launching 2026." />
   <meta property="og:image" content="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=1200&q=80" />
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -17,15 +17,15 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --navy:      #1a2b4a;
-      --navy-deep: #111d33;
-      --terra:     #e8663a;
-      --terra-light: #f07a50;
-      --cream:     #fafaf8;
-      --warm-white:#ffffff;
-      --ink:       #1a1a1a;
-      --ink-muted: #5a5a5a;
-      --border:    rgba(26,43,74,0.12);
+      --navy:       #1a2b4a;
+      --navy-deep:  #111d33;
+      --gold:       #C9A84C;
+      --gold-light: #D4B56A;
+      --cream:      #fafaf8;
+      --warm-white: #ffffff;
+      --ink:        #1a1a1a;
+      --ink-muted:  #5a5a5a;
+      --border:     rgba(26,43,74,0.12);
     }
 
     html { scroll-behavior: smooth; }
@@ -89,7 +89,7 @@
     .nav-cta {
       font-size: 13px;
       font-weight: 600;
-      color: var(--terra);
+      color: var(--gold);
       text-decoration: none;
       letter-spacing: 0.3px;
       transition: opacity 0.2s;
@@ -170,7 +170,7 @@
       font-weight: 600;
       letter-spacing: 2.5px;
       text-transform: uppercase;
-      color: var(--terra);
+      color: var(--gold);
       margin-bottom: 20px;
     }
 
@@ -181,11 +181,22 @@
       line-height: 1.0;
       color: var(--navy);
       letter-spacing: -2px;
-      margin-bottom: 10px;
+      margin-bottom: 14px;
     }
     .hero-title em {
       font-style: italic;
-      color: var(--terra);
+      color: var(--gold);
+    }
+
+    .hero-tagline {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(15px, 2vw, 19px);
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      color: var(--navy);
+      opacity: 0.55;
+      margin-bottom: 28px;
     }
 
     .hero-sub {
@@ -266,7 +277,7 @@
     .form-error {
       display: none;
       font-size: 13px;
-      color: var(--terra);
+      color: var(--gold);
       margin-top: 6px;
     }
 
@@ -279,12 +290,12 @@
     .stamp {
       width: 88px; height: 88px;
       border-radius: 50%;
-      border: 2.5px dashed var(--terra);
+      border: 2.5px dashed var(--gold);
       display: flex; flex-direction: column;
       align-items: center; justify-content: center;
       text-align: center;
       transform: rotate(13deg);
-      background: rgba(232,102,58,0.07);
+      background: rgba(201,168,76,0.07);
       padding: 8px;
     }
     .stamp-inner {
@@ -292,14 +303,14 @@
       font-weight: 700;
       letter-spacing: 1.8px;
       text-transform: uppercase;
-      color: var(--terra);
+      color: var(--gold);
       line-height: 1.4;
     }
     .stamp-year {
       font-family: 'Playfair Display', serif;
       font-size: 16px;
       font-weight: 900;
-      color: var(--terra);
+      color: var(--gold);
       margin-top: 2px;
     }
 
@@ -316,7 +327,7 @@
       font-weight: 600;
       letter-spacing: 2.5px;
       text-transform: uppercase;
-      color: var(--terra);
+      color: var(--gold);
       margin-bottom: 16px;
       display: block;
     }
@@ -332,7 +343,7 @@
     }
     .section-heading em {
       font-style: italic;
-      color: var(--terra);
+      color: var(--gold);
     }
 
     /* ── PILLARS ── */
@@ -359,7 +370,7 @@
       position: absolute;
       top: 0; left: 0; right: 0;
       height: 3px;
-      background: linear-gradient(90deg, var(--terra), var(--navy));
+      background: linear-gradient(90deg, var(--gold), var(--navy));
     }
     .pillar-icon {
       font-size: 32px;
@@ -428,7 +439,7 @@
     .manifesto-quote strong {
       font-weight: 900;
       font-style: normal;
-      color: var(--terra);
+      color: var(--gold);
     }
     .manifesto-body {
       font-size: 17px;
@@ -442,7 +453,7 @@
       content: '';
       display: block;
       width: 60px; height: 2px;
-      background: var(--terra);
+      background: var(--gold);
       margin: 0 auto 32px;
     }
     .manifesto-inner::after {
@@ -469,7 +480,7 @@
     }
     .final-cta h2 em {
       font-style: italic;
-      color: var(--terra);
+      color: var(--gold);
     }
     .final-cta p {
       font-size: 17px;
@@ -542,13 +553,13 @@
     </div>
 
     <div class="hero-content">
-      <span class="hero-eyebrow fade-up">For study abroad students in Europe — 2026</span>
+      <span class="hero-eyebrow fade-up">The Smart Travel App — Europe 2026</span>
       <h1 class="hero-title fade-up delay-1">
-        Your trip.<br />Not your <em>content strategy.</em>
+        When on<br /><em>Earth!</em>
       </h1>
       <p class="hero-sub fade-up delay-2">
-        Zups is the social travel app that optimizes for trips taken,<br />
-        not time spent scrolling.
+        Post postcards. Plan trips. Go places.<br />
+        No feed. No followers. No performance.
       </p>
 
       <div id="waitlist" class="fade-up delay-3">
@@ -633,7 +644,7 @@
   <!-- FINAL CTA -->
   <section class="final-cta" id="final-cta">
     <div class="final-cta-inner">
-      <h2>Your semester<br />starts <em>here.</em></h2>
+      <h2>Your world<br />is waiting <em>out there.</em></h2>
       <p>We're launching for study abroad students in Europe in 2026. Drop your email and be first through the door.</p>
       <form class="waitlist-form" id="waitlistForm2" style="justify-content:center;">
         <input type="email" name="email"
