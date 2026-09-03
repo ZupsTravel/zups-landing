@@ -4,9 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Zups — When on Earth!</title>
-  <meta name="description" content="Zups is the smart travel app for study abroad students in Europe. Craft postcards, plan trips with friends, and connect with your travel community — the smart way to travel." />
+  <meta name="description" content="Zups is the smart travel app for Europe. Craft postcards, plan trips, and connect with travelers in Communities — the smart way to travel." />
   <meta property="og:title" content="Zups — When on Earth!" />
-  <meta property="og:description" content="The smart travel app for study abroad students in Europe. Launching 2026." />
+  <meta property="og:description" content="The smart travel app for Europe. Launching 2026." />
   <meta property="og:image" content="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=1200&q=80" />
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -497,7 +497,7 @@
       align-items: center;
       justify-content: space-between;
       flex-wrap: wrap;
-      gap: 12px;
+      gap: 16px;
     }
     .footer-logo {
       font-family: 'Playfair Display', serif;
@@ -505,11 +505,22 @@
       font-size: 18px;
       color: var(--navy);
     }
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      font-size: 13px;
+    }
+    .footer-links a {
+      color: var(--ink-muted);
+      text-decoration: none;
+    }
+    .footer-links a:hover { color: var(--navy); }
     .footer-note {
       font-size: 13px;
-      color: #bbb;
+      color: var(--ink-muted);
     }
-    .footer-note a { color: #bbb; }
+    .footer-note a { color: var(--ink-muted); }
 
     /* ── MOBILE ── */
     @media (max-width: 640px) {
@@ -523,6 +534,7 @@
       .strip-img:hover { flex: 1.2; }
       .stamp-wrap { display: none; }
       footer { flex-direction: column; text-align: center; }
+      .footer-links { justify-content: center; }
     }
   </style>
 </head>
@@ -559,7 +571,7 @@
       </h1>
       <p class="hero-sub fade-up delay-2">
         Craft postcards. Plan trips. Go places.<br />
-        Group chats for travel. Communities for travelers.
+        Communities for travelers.
       </p>
 
       <div id="waitlist" class="fade-up delay-3">
@@ -615,13 +627,13 @@
         </div>
         <div class="pillar">
           <span class="pillar-icon">🤙</span>
-          <h3 class="pillar-title">Go With Your People</h3>
-          <p class="pillar-body">Share trip proposals with your travel circle, get a quick vibe check, then book together in one tap. No Venmo chaos, no "wait who booked what" — just the same hostel room, locked in.</p>
+          <h3 class="pillar-title">Communities for Travelers</h3>
+          <p class="pillar-body">Join Communities built around how you travel — Solo, Budget, Europe, and more. Share the postcards worth sharing. No follower counts, no vanity metrics. Just travelers.</p>
         </div>
         <div class="pillar">
           <span class="pillar-icon">💎</span>
-          <h3 class="pillar-title">Hidden Gems, Earned</h3>
-          <p class="pillar-body">After you've been somewhere, unlock the ability to leave a hidden gem — human-only, vague by design. A direction, not a map. No rankings, no coordinates. Just a nudge from someone who's been there.</p>
+          <h3 class="pillar-title">Hidden Gems on the Back</h3>
+          <p class="pillar-body">Every postcard has a back. Leave a hidden gem for the next traveler — human-only, vague by design. A direction, not a map. No rankings, no coordinates. Just a nudge from someone who's been there.</p>
         </div>
       </div>
     </div>
@@ -645,7 +657,7 @@
   <section class="final-cta" id="final-cta">
     <div class="final-cta-inner">
       <h2>Your world<br />is waiting <em>out there.</em></h2>
-      <p>We're launching for study abroad students in Europe in 2026. Drop your email and be first through the door.</p>
+      <p>We're launching in Europe in 2026. Drop your email and be first through the door.</p>
       <form class="waitlist-form" id="waitlistForm2" style="justify-content:center;">
         <input type="email" name="email"
                placeholder="your@email.com"
@@ -660,7 +672,13 @@
   <!-- FOOTER -->
   <footer>
     <span class="footer-logo">Zups</span>
-    <span class="footer-note">© 2026 Zups Travel, Inc. · Built for wanderers. · <a href="mailto:jameszupa@zupstravel.com">jameszupa@zupstravel.com</a></span>
+    <nav class="footer-links" aria-label="Legal">
+      <a href="/legal/privacy">Privacy</a>
+      <a href="/legal/terms">Terms</a>
+      <a href="/support">Support</a>
+      <a href="/legal/affiliate-disclosure">Affiliate Disclosure</a>
+    </nav>
+    <span class="footer-note">© 2026 Zups · Built for wanderers · <a href="mailto:jameszupa@zupstravel.com">jameszupa@zupstravel.com</a></span>
   </footer>
 
   <script>
