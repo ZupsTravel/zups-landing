@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Zups</title>
+  <meta name="description" content="How Zups handles your data. Written to describe what the app actually does at launch — not boilerplate." />
+  <meta name="robots" content="index,follow" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/legal/style.css" />
+</head>
+<body>
+
+<nav class="legal-nav">
+  <a class="nav-logo" href="/">Zups</a>
+  <a class="nav-back" href="/">← Back to zupstravel.com</a>
+</nav>
+
+<main class="legal">
+  <span class="eyebrow">Legal</span>
+  <h1>Privacy Policy</h1>
+  <p class="updated">Effective: <strong>[EFFECTIVE DATE — set at publish]</strong> · Last updated: <strong>[LAST UPDATED]</strong></p>
+
+  <p>This policy describes what Zups collects, how we use it, who we share it with, and the choices you have. It reflects how the app <em>actually</em> works at V1 launch. If something changes materially, we'll update this page and note it here.</p>
+
+  <p>Zups is operated by James Zupa ("Zups", "we", "us"). We haven't formed a company entity yet — the service is currently operated by an individual. All questions can go to <a href="mailto:jameszupa@zupstravel.com">jameszupa@zupstravel.com</a>.</p>
+
+  <h2>Summary</h2>
+  <ul>
+    <li>Zups is a travel planning app. We collect the information needed to run it — nothing more.</li>
+    <li>We do <strong>not</strong> collect your precise device location (GPS). Ever. Zups uses a manually chosen home airport, not your phone's location.</li>
+    <li>We do <strong>not</strong> use third-party advertising SDKs, cross-app tracking, analytics vendors, crash reporters, or session replay tools.</li>
+    <li>Sign in with Apple is the only sign-in method. Apple may relay a randomized email to us — that's your choice, not ours.</li>
+    <li>At V1 launch, all Zups accounts are private-by-default. Your postcards and profile are not visible to other Zups users.</li>
+    <li>You can delete your account at any time from Settings → Danger Zone → Delete Account. This is a real, hard delete.</li>
+  </ul>
+
+  <h2>1. Information we collect</h2>
+
+  <h3>Account and profile information</h3>
+  <ul>
+    <li><strong>Apple identifier</strong> and, if you allow it, the email address Apple provides on first sign-in (which may be Apple's private relay address). On your first sign-in only, Apple may also share your name.</li>
+    <li><strong>Profile details you enter</strong> in the app: username, bio, profile photo, home city, home airport (a 3-letter airport code you choose from a list), number of travelers, and passport country (optional).</li>
+  </ul>
+
+  <h3>Content you create</h3>
+  <ul>
+    <li>Trips you plan (destinations, dates, saved templates, notes).</li>
+    <li>Postcards you create (photo you upload, caption, back-of-postcard text, template selection).</li>
+    <li>Journal entries you write inside the app.</li>
+    <li>Saved trips, saved trip collections, and any community memberships you join.</li>
+  </ul>
+
+  <h3>Photos and media</h3>
+  <p>If you upload a photo (for your profile or a postcard), the photo is stored on our servers so we can display it back to you. We do not scan the contents of your photo, extract metadata, or share it with any third party.</p>
+
+  <h3>Home base — no GPS</h3>
+  <p>Zups needs to know your "home airport" to plan trips from it. You choose this <strong>manually</strong> — you type a city name, we look it up against OpenStreetMap's public geocoder to find the nearest airports, and you pick one. We store the city name and 3-letter airport code. <strong>We do not store latitude/longitude, and we never ask your device for your GPS location.</strong> The location permission dialog does not appear in Zups V1.</p>
+
+  <h3>How you use the app (product analytics)</h3>
+  <p>Zups records first-party product-interaction events — for example, opening a trip idea, saving a trip, starting to plan, or tapping a booking link. This helps us understand which content is useful and which is not. These events are stored in our own database (Supabase) linked to your account. We do <strong>not</strong> send them to Amplitude, Mixpanel, PostHog, Google Analytics, Segment, Facebook, or any other analytics vendor. There is no third-party analytics SDK in the app.</p>
+
+  <h3>Booking handoff records</h3>
+  <p>When you tap a "book with" link inside Zups, we log the fact that you clicked it — including origin, destination, and dates — so we can understand what people are trying to book. If a partner completes a booking, they may send us a delayed confirmation (see "Booking partners" below). No credit card, passport, or personal booking detail is ever sent through Zups — you complete the booking on the partner's website.</p>
+
+  <h3>Support communications</h3>
+  <p>If you email us, we keep the email so we can respond.</p>
+
+  <h3>What we don't collect at V1 launch</h3>
+  <ul>
+    <li>Precise device location (GPS).</li>
+    <li>Contacts, calendar, microphone, or camera roll access (beyond a photo you deliberately select for upload).</li>
+    <li>Advertising identifiers.</li>
+    <li>Cross-app tracking data.</li>
+    <li>Health, financial, or biometric information.</li>
+  </ul>
+
+  <h2>2. How we use your information</h2>
+  <ul>
+    <li>To run the app: display your trips, postcards, journal, and profile back to you.</li>
+    <li>To sign you in (via Apple) and keep your session active.</li>
+    <li>To send booking-partner links pre-filled with your trip context (origin, destination, dates) so the partner's search page opens with the right query.</li>
+    <li>To understand which product features are useful, in aggregate, from your first-party interaction events.</li>
+    <li>To respond to your support requests.</li>
+    <li>To comply with law when we're legally required to.</li>
+  </ul>
+  <p>We do <strong>not</strong> use your information for advertising, retargeting, profiling, or sale to data brokers.</p>
+
+  <h2>3. Location — clear statement</h2>
+  <p>Zups does not obtain your precise location from your device. The iOS <em>Location</em> permission prompt does not appear in Zups V1. The only "location" data associated with your account is the home city label and 3-letter airport code you chose during onboarding. You can change this in Settings at any time.</p>
+
+  <h2>4. Who we share information with</h2>
+
+  <p>Zups uses a small number of trusted service providers to operate. Each receives only what they need to do their job.</p>
+
+  <table>
+    <thead>
+      <tr><th>Provider</th><th>What they do for Zups</th><th>What they receive</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Supabase</strong></td>
+        <td>Database, authentication, storage, edge functions (our primary backend)</td>
+        <td>Everything you save in Zups: account, profile, trips, postcards, journal, product events.</td>
+      </tr>
+      <tr>
+        <td><strong>Apple</strong></td>
+        <td>Sign in with Apple</td>
+        <td>Apple's own identifier for you. If you use Apple's private-relay email, we receive the relay address, not your real email.</td>
+      </tr>
+      <tr>
+        <td><strong>Expo (EAS)</strong></td>
+        <td>Mobile app builds and over-the-air updates</td>
+        <td>App bundles and update channels — no user data.</td>
+      </tr>
+      <tr>
+        <td><strong>OpenStreetMap Nominatim</strong></td>
+        <td>Converts a city name you type into approximate coordinates so we can suggest nearby airports</td>
+        <td>The city string you typed and a generic "ZupsApp" User-Agent. No account identifier.</td>
+      </tr>
+      <tr>
+        <td><strong>Google Routes API</strong></td>
+        <td>Ground transit routing between cities you've added to a trip</td>
+        <td>Origin and destination city references. No account identifier. Query is made from our servers, not your device.</td>
+      </tr>
+      <tr>
+        <td><strong>Booking partners</strong> (Travelpayouts / Kiwi, Expedia Group's Travel Creator Program, Hostelworld, GetYourGuide, Viator, Omio, Rome2Rio, individual ferry operators)</td>
+        <td>Provide the actual flights, accommodations, ground transport, and experiences you can book. Zups is not the seller.</td>
+        <td>The trip parameters needed to pre-fill the partner's search — origin, destination, dates, number of adults — plus Zups' affiliate marker. See <a href="/legal/affiliate-disclosure">Affiliate Disclosure</a>.</td>
+      </tr>
+      <tr>
+        <td><strong>fal.ai</strong> (server-side only)</td>
+        <td>Generates editorial images used inside the app</td>
+        <td>Text prompts written by us — no user data.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>We do <strong>not</strong> share your information with advertisers, data brokers, marketing platforms, or any party not listed above.</p>
+
+  <h3>Booking partner data — what actually gets sent</h3>
+  <p>When you tap a "book flights", "find hotels", "browse experiences" or similar link, Zups opens the partner's website with a URL that includes: the trip context (origin, destination, dates, adult count) and our affiliate marker. Zups also includes a random identifier used solely so the partner can tell us if a booking eventually completes. This random identifier is <strong>not</strong> your Zups account ID or email — it's a separate opaque token stored server-side. We do not send your name, email, Apple identifier, or precise location to booking partners.</p>
+
+  <p>Once you land on the partner's website, the partner's own privacy policy governs what happens next — including any cookies they set, any account you create with them, and any booking you make.</p>
+
+  <h2>5. Sign in with Apple</h2>
+  <p>Zups uses Sign in with Apple as the only way to create or sign into an account. Apple gives us an opaque identifier for you, an email address (which may be Apple's private relay), and — on your first sign-in only — your name if you chose to share it. We store these to represent your account. If you use Apple's "Hide My Email" relay, we cannot see your real email address.</p>
+
+  <p>When you delete your Zups account (see below), we attempt to revoke Apple's authorization so the link between your Apple ID and your (now-deleted) Zups account is severed. If you later sign into Zups with the same Apple ID, Apple treats it as a brand-new user and you get a fresh, empty account.</p>
+
+  <h2>6. Postcard and profile visibility (V1)</h2>
+  <p>At V1 launch, every Zups account is <strong>private</strong>. This is enforced at the database level, not just in the app UI:</p>
+  <ul>
+    <li>Your postcards, saved trips, journal entries, and follows are visible only to you.</li>
+    <li>Other users cannot search for you, view your profile, or see your postcards.</li>
+    <li>Communities (topic groups seeded by Zups — e.g. Solo Travelers, Europe, Budget Travel) are the one shared surface. If you post a postcard to a Community you've joined, other members of that Community can see it. Community postcards are still served through signed, time-limited URLs — they aren't publicly indexable.</li>
+    <li>The Zups app UI does not currently offer a switch to make your account public. This may change in a future release; if it does, we'll update this page before any change takes effect.</li>
+  </ul>
+
+  <h2>7. User-generated content, reporting, and moderation</h2>
+  <p>You control the content you create. Zups V1 supports reporting and blocking so other members of a Community can flag content they find objectionable:</p>
+  <ul>
+    <li>Any user can report a postcard shared to a Community. Reports go into our system for review.</li>
+    <li>If three or more distinct users report the same postcard, it is automatically hidden from public view pending review.</li>
+    <li>Users can also block other users; blocked users cannot interact with your content.</li>
+    <li>We also apply a server-side content filter that rejects obviously abusive text in postcards before it ever becomes visible.</li>
+    <li>We review reports and respond to launch-blocking abuse within a reasonable time. For urgent safety concerns, email <a href="mailto:jameszupa@zupstravel.com">jameszupa@zupstravel.com</a>.</li>
+  </ul>
+
+  <h2>8. Deleting your account</h2>
+  <p>You can delete your Zups account from inside the app:</p>
+  <p><strong>Settings → Danger Zone → Delete Account → confirm twice.</strong></p>
+
+  <p>When you delete your account, we:</p>
+  <ul>
+    <li>Delete your profile row and your Supabase Authentication user.</li>
+    <li>Delete every trip, postcard, journal entry, saved trip, follow, group membership, block, and report you created, across the 27 tables that reference your account.</li>
+    <li>Delete every file you uploaded to Zups storage — profile photo, postcard photos, trip images, trip videos.</li>
+    <li>Attempt to revoke Apple's authorization so Sign in with Apple later creates a fresh account instead of resurrecting the old one.</li>
+  </ul>
+
+  <p><strong>What we retain after deletion, and why:</strong> we keep the aggregate booking-handoff and booking-link-click rows that record which trips led to which partner clicks. Before we retain them, we remove your account association from those rows — they no longer contain your Zups account identifier. We keep them because they're how we understand which trip ideas convert into booking attempts, in aggregate, and how we're paid by our booking partners. To be precise: we do not describe these rows as "anonymous"; they are retained in a form no longer associated with your Zups account, and they still contain the trip-context fields already in the row (origin, destination, dates, partner).</p>
+
+  <p>Supabase's own authentication server logs (records that a login happened, tokens issued, etc.) are retained by Supabase according to their retention policy and are not directly controllable by us.</p>
+
+  <p>If you'd rather delete your account by email — for example if you can't get into the app — write to <a href="mailto:jameszupa@zupstravel.com">jameszupa@zupstravel.com</a> from the email associated with your account (or from your Apple-relay email) and we'll process it manually.</p>
+
+  <h2>9. Data retention</h2>
+  <p>We keep your account data for as long as your account exists. If you delete your account, we delete it as described above. If you become inactive but don't delete your account, we keep your data so it's ready when you come back.</p>
+  <p>Support emails are kept for as long as needed to help you, then discarded.</p>
+
+  <h2>10. Data location</h2>
+  <p>Zups' primary backend (Supabase) currently runs in the United States. If you use Zups from outside the US, you're consenting to your data being processed there. Apple, Expo, and our booking partners operate globally.</p>
+
+  <h2>11. Children</h2>
+  <p>Zups is not directed at children under 13, and we don't knowingly collect data from anyone under 13. If you believe a child under 13 has created a Zups account, email us and we'll delete it.</p>
+
+  <h2>12. Your choices and rights</h2>
+  <ul>
+    <li>Edit your profile at any time in Settings.</li>
+    <li>Delete your account at any time in Settings.</li>
+    <li>Ask us what we hold about you, by emailing <a href="mailto:jameszupa@zupstravel.com">jameszupa@zupstravel.com</a>.</li>
+    <li>Ask us to correct or delete something specific.</li>
+    <li>If you're in the EU/UK, you have GDPR rights (access, correction, erasure, portability, objection); if you're in California, you have CCPA/CPRA rights (know, delete, correct, opt out of "sale/sharing"). We do not "sell" personal information in the ordinary sense of the word, and we do not participate in cross-context behavioral advertising.</li>
+  </ul>
+  <p>See <a href="/legal/manage-data">Manage Your Data</a> for the practical how-to.</p>
+
+  <h2>13. Security</h2>
+  <p>We use standard industry practices: TLS for data in transit, Supabase's row-level security policies for database access, and Apple's Sign in with Apple for authentication. No system is perfectly secure. If you find something concerning, email <a href="mailto:jameszupa@zupstravel.com">jameszupa@zupstravel.com</a>.</p>
+
+  <h2>14. Changes to this policy</h2>
+  <p>If we change this policy materially, we'll update the "Last updated" date at the top and, for meaningful changes, notify active users inside the app or by email.</p>
+
+  <h2>15. Contact</h2>
+  <div class="contact-card">
+    <h3>Get in touch</h3>
+    <p><strong>Zups</strong><br />
+    Operated by James Zupa (individual operator)<br />
+    Email: <a href="mailto:jameszupa@zupstravel.com">jameszupa@zupstravel.com</a></p>
+    <p>For account deletion, privacy questions, or data requests, please use the email above. We do not publish a physical mailing address for Zups V1.</p>
+  </div>
+
+</main>
+
+<footer class="legal-footer">
+  <div class="footer-links">
+    <a href="/legal/privacy">Privacy</a> ·
+    <a href="/legal/terms">Terms</a> ·
+    <a href="/support">Support</a> ·
+    <a href="/legal/affiliate-disclosure">Affiliate Disclosure</a>
+  </div>
+  <div>© 2026 Zups · <a href="mailto:jameszupa@zupstravel.com" style="color:inherit;">jameszupa@zupstravel.com</a></div>
+</footer>
+
+</body>
+</html>

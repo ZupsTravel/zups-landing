@@ -497,7 +497,7 @@
       align-items: center;
       justify-content: space-between;
       flex-wrap: wrap;
-      gap: 12px;
+      gap: 16px;
     }
     .footer-logo {
       font-family: 'Playfair Display', serif;
@@ -505,11 +505,22 @@
       font-size: 18px;
       color: var(--navy);
     }
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      font-size: 13px;
+    }
+    .footer-links a {
+      color: var(--ink-muted);
+      text-decoration: none;
+    }
+    .footer-links a:hover { color: var(--navy); }
     .footer-note {
       font-size: 13px;
-      color: #bbb;
+      color: var(--ink-muted);
     }
-    .footer-note a { color: #bbb; }
+    .footer-note a { color: var(--ink-muted); }
 
     /* ── MOBILE ── */
     @media (max-width: 640px) {
@@ -523,6 +534,7 @@
       .strip-img:hover { flex: 1.2; }
       .stamp-wrap { display: none; }
       footer { flex-direction: column; text-align: center; }
+      .footer-links { justify-content: center; }
     }
   </style>
 </head>
@@ -660,7 +672,13 @@
   <!-- FOOTER -->
   <footer>
     <span class="footer-logo">Zups</span>
-    <span class="footer-note">© 2026 Zups Travel, Inc. · Built for wanderers. · <a href="mailto:jameszupa@zupstravel.com">jameszupa@zupstravel.com</a></span>
+    <nav class="footer-links" aria-label="Legal">
+      <a href="/legal/privacy">Privacy</a>
+      <a href="/legal/terms">Terms</a>
+      <a href="/support">Support</a>
+      <a href="/legal/affiliate-disclosure">Affiliate Disclosure</a>
+    </nav>
+    <span class="footer-note">© 2026 Zups · Built for wanderers · <a href="mailto:jameszupa@zupstravel.com">jameszupa@zupstravel.com</a></span>
   </footer>
 
   <script>
